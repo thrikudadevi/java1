@@ -1,0 +1,7 @@
+public class Main {
+    public static void main(String[] args) {
+        String str = "JavaProgram";
+        String result = str.toLowerCase();
+        System.out.println(result);
+    }
+}
