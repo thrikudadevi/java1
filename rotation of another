@@ -1,0 +1,32 @@
+public class Main {
+    
+    public static boolean isRotation(String str1, String str2) {
+     
+        if (str1 == null || str2 == null) {
+            return false;
+        }
+        
+       
+        if (str1.length() != str2.length()) {
+            return false;
+        }
+        
+       
+        String concatenated = str1 + str1;
+        
+        
+        return concatenated.contains(str2);
+    }
+
+    public static void main(String[] args) {
+        String s1 = "ABCD";
+        String s2 = "CDAB";
+        
+        if (isRotation(s1, s2)) {
+            System.out.println("\"" + s2 + "\" is a valid rotation of \"" + s1 + "\"");
+        } else {
+            System.out.println("\"" + s2 + "\" is NOT a rotation of \"" + s1 + "\"");
+        }
+    }
+}
+
