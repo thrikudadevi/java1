@@ -1,0 +1,29 @@
+import java.util.Arrays;
+
+public class Main {
+    public static void moveZeroes(int[] nums) {
+        // Pointer to track the position of the next non-zero element
+        int nonZeroPos = 0;
+
+        // Traverse the array
+        for (int i = 0; i < nums.length; i++) {
+            // If the current element is non-zero, swap it with the element at nonZeroPos
+            if (nums[i] != 0) {
+                int temp = nums[i];
+                nums[i] = nums[nonZeroPos];
+                nums[nonZeroPos] = temp;
+                
+                
+                nonZeroPos++;
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {0, 1, 0, 3, 12};
+        
+        System.out.println("Original Array: " + Arrays.toString(arr));
+        moveZeroes(arr);
+        System.out.println("Modified Array: " + Arrays.toString(arr));
+    }
+}
