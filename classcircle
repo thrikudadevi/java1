@@ -1,0 +1,50 @@
+class Circle
+{
+    private double radius;
+
+    public Circle(double radius)
+    {
+        this.radius = radius;
+    }
+
+    public double area()
+    {
+        return Math.PI * radius * radius;
+    }
+
+    public double perimeter()
+    {
+        return 2 * Math.PI * radius;
+    }
+}
+
+class Cylinder extends Circle
+{
+    private double height;
+
+    public Cylinder(double radius, double height)
+    {
+        super(radius);
+        this.height = height;
+    }
+
+    public double volume()
+    {
+        return area() * height;
+    }
+}
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Circle c = new Circle(5);
+
+        System.out.println("Circle Area = " + c.area());
+        System.out.println("Circle Perimeter = " + c.perimeter());
+
+        Cylinder cy = new Cylinder(5, 10);
+
+        System.out.println("Cylinder Volume = " + cy.volume());
+    }
+}
