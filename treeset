@@ -1,0 +1,23 @@
+package set;
+import java.util.*;
+
+public class setdemo {
+
+	public static void main(String[] args) {
+		TreeSet<String> h = new TreeSet<String>();
+		h.add("parth");
+		h.add("kartik");
+		h.add("ranveer");
+		h.add("paras");
+		h.add("kriti");
+		h.add("shraddha");
+		System.out.print(h);
+
+
+
+
+
+
+	}
+
+}
