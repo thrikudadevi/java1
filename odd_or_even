@@ -1,0 +1,15 @@
+package abc;
+
+public class odd_or_even_nos {
+
+	public static void main(String[] args) {
+		int a = 0;
+		if (a % 2 == 0) {
+			System.out.println("Even Number");
+		} else {
+			System.out.println("Odd Number");
+			
+		}
+	}
+}
+	
