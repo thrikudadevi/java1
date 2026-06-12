@@ -1,0 +1,88 @@
+package collections;
+import java.util.*;
+
+public class array__list {
+
+    public static void main(String[] args) {
+
+       
+        ArrayList<Integer> alist = new ArrayList<Integer>();
+
+        alist.add(50);
+        alist.add(20);
+        alist.add(40);
+        alist.add(10);
+        alist.add(30);
+
+        System.out.println("add(): " + alist);
+
+        
+        ArrayList<Integer> list2 = new ArrayList<Integer>();
+
+        list2.add(100);
+        list2.add(200);
+
+        alist.addAll(list2);
+
+        System.out.println("addAll(): " + alist);
+
+        
+        if(alist.contains(20)) {
+            System.out.println("20 exists");
+        }
+        else {
+            System.out.println("20 does not exist");
+        }
+
+        
+        System.out.println("get(2): " + alist.get(2));
+
+       
+        System.out.println("indexOf(40): " + alist.indexOf(40));
+
+        
+        alist.remove(Integer.valueOf(100));
+
+        System.out.println("After remove(100): " + alist);
+
+        
+        System.out.println("Size of ArrayList: " + alist.size());
+
+        
+        System.out.println("isEmpty(): " + alist.isEmpty());
+
+        
+        System.out.println("subList(1,4): " + alist.subList(1, 4));
+
+        
+        alist.set(0, 999);
+
+        System.out.println("After set(): " + alist);
+
+       
+        Collections.sort(alist);
+
+        System.out.println("After sort(): " + alist);
+
+       
+        alist.removeIf(n -> n > 100);
+
+        System.out.println("After removeIf(n > 100): " + alist);
+
+        
+        ArrayList<Integer> copy =
+                (ArrayList<Integer>) alist.clone();
+
+        System.out.println("Cloned List: " + copy);
+
+        
+        System.out.println("Using forEach():");
+
+        alist.forEach(n -> System.out.println(n));
+
+     
+        alist.clear();
+
+        System.out.println("After clear(): " + alist);
+    }
+}
