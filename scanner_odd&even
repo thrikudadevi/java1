@@ -1,0 +1,22 @@
+package abc;
+import java.util.Scanner;
+public class odd_or_even_nos {
+
+	public static void main(String[] args) {
+		Scanner parth = new Scanner(System.in);
+		int num = parth.nextInt();
+		System.out.print("Enter a Number:");
+		if ( num % 2 == 0) {
+			System.out.print("Even Number");
+		}
+		else {
+			System.out.print("Odd Number");
+		}
+		parth.close();
+		
+		
+		}
+		
+	}
+
+	
