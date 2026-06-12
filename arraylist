@@ -1,0 +1,29 @@
+package array_list;
+import java.util.*;
+
+public class javac {
+
+	public static void main(String[] args) {
+		int a [] = new int[6];
+		ArrayList<Integer> alist = new ArrayList<Integer>();
+		alist.add(10);
+		alist.add(20);
+		alist.add(30);
+		alist.add(40);
+		alist.add(50);
+		System.out.println(alist);
+		alist.remove(2);
+		System.out.println(alist);
+		alist.set(3, 100);
+		if(alist.contains(20)) {
+			System.out.print("20 exists");
+		}
+			else {
+				System.out.print("No");
+			}
+		
+	System.out.println("Size of Arraylist: " + alist.size());
+	System.out.println(alist.size());
+	}
+}
+	
