@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Main {
+    int tulipprice;
+    int buytulips(int money) {
+        int rem = money - tulipprice;
+        return rem;
+    }
+    public static void main(String[] args) {
+        Main zhang = new Main();
+        Scanner parth = new Scanner(System.in);
+        System.out.println("Enter your money:" );
+        int money = parth.nextInt();
+        System.out.println("Enter tulipprice:");
+        zhang.tulipprice = parth.nextInt();
+        int rem = zhang.buytulips(money);
+        System.out.println("Your money:" + money);
+        System.out.println("Your tulipprice:" + zhang.tulipprice);
+        System.out.println("Remaining:" + rem);
+    }
+}
