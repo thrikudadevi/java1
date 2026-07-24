@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Main {
+    String evenorodd;
+    String getevenorodd(int num) {
+        if (num % 2 == 0) {
+            evenorodd = "Even";
+        }  else {
+            evenorodd = "Odd";
+        }
+        return evenorodd;
+        
+    }
+    public static void main(String[] args) {
+        Main zhang = new Main();
+        Scanner parth = new Scanner(System.in);
+        System.out.println("Enter your value:");
+        int num = parth.nextInt();
+        String evenorodd = zhang.getevenorodd(num);
+        System.out.println("Your value :" + num);
+        System.out.println("Result:" + evenorodd);
+    }
+}
