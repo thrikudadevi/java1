@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Main {
+    int tulipprice;
+    int buytulips(int amount) {
+        int rem = amount - tulipprice;
+        return rem;
+    }
+    public static void main(String[] args) {
+        Main zhang = new Main();
+        Scanner parth = new Scanner(System.in);
+        System.out.println("Enter a value:");
+        int amount = parth.nextInt();
+        System.out.println("Enter tulipprice:");
+        zhang.tulipprice = parth.nextInt();
+        int rem = zhang.buytulips(amount);
+        System.out.println("Your value:");
+        System.out.println("tulipprice:");
+        System.out.println("remaining:" + rem);
+        System.out.println("THANKYOU FOR PURCHASING TULIPS FORM OUR WEBSITE");
+        
+    }
+}
