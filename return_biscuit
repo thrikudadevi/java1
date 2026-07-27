@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main {
+    int biscuitprice;
+    int getbiscuits(int money) {
+        int rem = money - biscuitprice;
+        return rem;
+    }
+    public static void main(String[] args) {
+        Main ka = new Main();
+        Scanner parth = new Scanner(System.in);
+        System.out.println("Enter your money:");
+        int money = parth.nextInt();
+        System.out.println("Enter a biscuitprice:");
+        ka.biscuitprice = parth.nextInt();
+        int rem = ka.getbiscuits(money);
+        System.out.println("Remaining value:" + rem);
+    }
+}
