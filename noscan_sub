@@ -1,0 +1,11 @@
+public class Main {
+    int sub (int firstnumber, int secondnumber) {
+        int thirdnumber = firstnumber - secondnumber;
+        return thirdnumber;
+    }
+    public static void main(String[] args) {
+        Main zhang = new Main();
+        int sub = zhang.sub(12,2);
+        System.out.println(sub);
+    }
+}
