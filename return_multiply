@@ -1,0 +1,11 @@
+public class Main {
+    int multiply (int a, int b) {
+        int c = a * b;
+        return c;
+    }
+    public static void main(String[] args) {
+        Main zhang = new Main();
+        int result = zhang.multiply(12,2);
+        System.out.println(result);
+    }
+}
