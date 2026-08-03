@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Main {
+    int sub (int firstnumber, int secondnumber) {
+        int thirdnumber = firstnumber - secondnumber;
+        return thirdnumber;
+    }
+    public static void main(String[] args) {
+        Main zhang = new Main();
+        Scanner parth = new Scanner(System.in);
+        System.out.println("Enter the firstnumber:");
+        int firstnumber = parth.nextInt();
+        System.out.println("Enter the secondnumber:");
+        int secondnumber = parth.nextInt();
+        int sub = zhang.sub(firstnumber, secondnumber);
+        System.out.println("total:" + sub);
+        parth.close();
+        
+    }
+
+}
