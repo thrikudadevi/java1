@@ -1,0 +1,10 @@
+public class Main {
+    String getname () {
+        return "Parth";
+    }
+    public static void main(String[] args) {
+        Main zhang = new Main();
+        String myname = zhang.getname();
+        System.out.println(myname);
+    }
+}
