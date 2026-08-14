@@ -1,0 +1,8 @@
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Name : zhang ,parth");
+        System.out.println("Age : 28,35");
+        System.out.println("Degree : Engineering");
+        System.out.println("Department : Electronic Engineering , Architecture");
+    }
+}
