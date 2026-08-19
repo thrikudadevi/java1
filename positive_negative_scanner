@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner parth = new Scanner(System.in);
+        System.out.println("ENTER A NO :");
+        int no = parth.nextInt();
+        if (no > 0) {
+            System.out.println("POSITIVE");
+        } else if (no < 0) {
+            System.out.println("NEGATIVE");
+        } else {
+            System.out.println("ZERO");
+        }
+    }
+}
